@@ -25,7 +25,8 @@ module.exports = {
       'max-xl': { max: '1365.98px' },
     },
     fontFamily: {
-      body: [...defaultTheme.fontFamily.sans],
+      body: ['Karla', ...defaultTheme.fontFamily.sans],
+      heading: ['Lora', ...defaultTheme.fontFamily.serif],
     },
   },
   plugins: [
