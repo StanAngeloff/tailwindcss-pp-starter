@@ -5,3 +5,11 @@ ports:
   - port: 8088
     onOpen: open-browser
     visibility: private
+vscode:
+  extensions:
+    - EditorConfig.EditorConfig
+    - bradlc.vscode-tailwindcss
+    - christian-kohler.npm-intellisense
+    - eg2.vscode-npm-script
+    - esbenp.prettier-vscode
+    - heybourn.headwind
