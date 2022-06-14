@@ -9,7 +9,19 @@
 }
 
 @layer components {
-  /* Noop. */
+  .lu-btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-center rounded-md ring-offset-2;
+    @apply focus:outline-none focus-visible:ring-2;
+  }
+
+  .lu-btn-red {
+    @apply text-white bg-red-700;
+    @apply hover:bg-red-800 ring-red-800;
+  }
+  .lu-btn-green {
+    @apply text-white bg-green-700;
+    @apply hover:bg-green-800 ring-green-800;
+  }
 }
 
 @layer utilities {
@@ -33,17 +45,17 @@
     }
   }
   @media (min-width: 1366px) {
-    .container:not([class*="max-w-"]) {
+    .container:not([class*='max-w-']) {
       max-width: 1366px;
     }
   }
   @media (min-width: 1440px) {
-    .container:not([class*="max-w-"]) {
+    .container:not([class*='max-w-']) {
       max-width: 1440px;
     }
   }
   @media (min-width: 1472px) {
-    .container:not([class*="max-w-"]) {
+    .container:not([class*='max-w-']) {
       max-width: 1440px;
       padding-right: 0;
       padding-left: 0;
